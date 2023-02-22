@@ -53,6 +53,12 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: .net-app
+        
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.405'
+          include-prerelease: true
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp

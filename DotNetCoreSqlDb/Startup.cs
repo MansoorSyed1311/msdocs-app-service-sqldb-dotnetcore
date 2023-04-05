@@ -56,7 +56,7 @@ namespace DotNetCoreSqlDb
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "api",
+                    name: "default",
                     pattern: "{controller=Todos}/{action=Index}/{id?}");
             });
         }

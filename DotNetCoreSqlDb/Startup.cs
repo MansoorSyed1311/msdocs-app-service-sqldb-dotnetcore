@@ -62,4 +62,3 @@ namespace DotNetCoreSqlDb
         }
     }
 }
-//checking the error 
